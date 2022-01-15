@@ -36,7 +36,7 @@ var upload = multer({
 router.post(
   "/multi-file-upload",
   upload.array("imagesArray", 8),
-  (req, res) => {
+  (req, res, next) => {
     const reqFiles = []
 
     const url = req.protocol + "://" + req.get("host")
@@ -70,10 +70,10 @@ router.post(
   }
 )
 
-router.get("/", (req, res) => {
+router.get("/", (req, res, next) => {
   File.find().then(response => {
     res.status(200).json({
-      message: "PDF fetched!",
+      message: "Data fetched!",
       posts: response,
     })
   })
