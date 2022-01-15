@@ -94,6 +94,14 @@ After Upload File
 
 ![image](https://github.com/Baiim/repo/blob/master/image/api-after.png?raw=true)
 
+You can click link url to see PDF File on your computer
+
+## Statement
+
+```
+the application is lacking in the pdf view section, in the future it will be added, thank you
+```
+
 ## Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
